@@ -1,0 +1,328 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(178, 174, 154);
+    height: 100%;
+}
+* {
+    -moz-box-sizing: border-box;
+    /* Для Firefox */
+    -webkit-box-sizing: border-box;
+    /* Для Safari и Chrome */
+    box-sizing: border-box;
+}
+p {
+    padding: 10px;
+    display: inline;
+    margin-left: 5px;
+    font-family: 'Domine', serif;
+}
+h2 {
+    font-size: 2em;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 10px;
+}
+section {
+    margin: 10px 0 20px 0;
+    padding: 10px;
+}
+
+
+/*NAVIGATION RULES*/
+
+header,
+footer {
+    width: 100%;
+    min-height: 70px;
+}
+.gradient {
+    background: -webkit-linear-gradient(45deg, hsla(320, 73%, 2%, 1) 0%, hsla(320, 73%, 2%, 0) 70%), -webkit-linear-gradient(315deg, hsla(203, 92%, 11%, 1) 10%, hsla(203, 92%, 11%, 0) 80%), -webkit-linear-gradient(225deg, hsla(90, 100%, 6%, 1) 10%, hsla(90, 100%, 6%, 0) 80%), -webkit-linear-gradient(135deg, hsla(268, 65%, 13%, 1) 100%, hsla(268, 65%, 13%, 0) 70%);
+    background: linear-gradient(45deg, hsla(320, 73%, 2%, 1) 0%, hsla(320, 73%, 2%, 0) 70%), linear-gradient(135deg, hsla(203, 92%, 11%, 1) 10%, hsla(203, 92%, 11%, 0) 80%), linear-gradient(225deg, hsla(90, 100%, 6%, 1) 10%, hsla(90, 100%, 6%, 0) 80%), linear-gradient(315deg, hsla(268, 65%, 13%, 1) 100%, hsla(268, 65%, 13%, 0) 70%);
+}
+.navi-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+li {
+    display: inline-block;
+    padding: 10px;
+    margin: 10px 10px;
+    border-radius: 20px;
+    min-width: 100px;
+    text-align: center;
+}
+li:hover {
+    background-color: black;
+}
+.menu-item a:hover {
+    text-shadow: 2px 2px 10px white;
+}
+a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Cormorant SC', serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+.logo {
+    display: inline-block;
+    text-transform: uppercase;
+    align-self: flex-start;
+    color: white;
+    padding: 10px;
+    margin: 10px 10px;
+}
+.logo span {
+    padding: 10px;
+    margin: 10px 10px;
+    font-family: 'Cormorant SC', serif;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+.logo span:hover {
+    text-shadow: 1px 1px 2px white;
+    cursor: pointer;
+}
+
+/*CONTENT RULES*/
+
+.main-container {
+    color: white;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    align-items: stretch;
+}
+img.right,
+img.left {
+    display: inline-block;
+    width: 100px;
+    height: 80px;
+    border: 5px solid white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    margin: 10px;
+}
+img.left {
+    float: left;
+}
+img.right {
+    float: right
+}
+.car-container {
+    display: inline-block;
+    float: left;
+    width: 448px;
+    height: 336px;
+    border: 3px solid white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-left: 10px;
+    margin-right: 15px;
+}
+.main-panel {
+    color: white;
+    text-align: justify;
+    display: inline-block;
+    padding: 10px;
+}
+#toTop {
+    display: inline-block;
+    position: fixed;
+    z-index: 9999;
+    bottom: 70px;
+    left: 50%;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 10px;
+    background: -webkit-linear-gradient(45deg, hsla(320, 73%, 2%, 1) 0%, hsla(320, 73%, 12%, 0) 70%), -webkit-linear-gradient(315deg, hsla(203, 92%, 11%, 1) 10%, hsla(203, 92%, 11%, 0) 80%), -webkit-linear-gradient(225deg, hsla(90, 100%, 6%, 1) 10%, hsla(90, 100%, 6%, 0) 80%), -webkit-linear-gradient(135deg, hsla(268, 65%, 13%, 1) 100%, hsla(268, 65%, 13%, 0) 70%);
+    background: linear-gradient(45deg, hsla(320, 73%, 2%, 1) 0%, hsla(320, 73%, 12%, 0) 70%), linear-gradient(135deg, hsla(203, 92%, 11%, 1) 10%, hsla(203, 92%, 11%, 0) 80%), linear-gradient(225deg, hsla(90, 100%, 6%, 1) 10%, hsla(90, 100%, 6%, 0) 80%), linear-gradient(315deg, hsla(268, 65%, 13%, 1) 100%, hsla(268, 65%, 13%, 0) 70%);
+    color: rgba(255, 255, 255, 1);
+}
+
+/*color: rgba(255, 255, 255, 0.3);
+  background:
+    -webkit-linear-gradient(45deg, hsla(320, 73%, 2%, 0.1) 0%, hsla(320, 73%, 2%, 0) 10%),
+    -webkit-linear-gradient(315deg, hsla(203, 92%, 11%, 0.1) 10%, hsla(203, 92%, 11%, 0) 15%),
+    -webkit-linear-gradient(225deg, hsla(90, 100%, 6%, 0.1) 10%, hsla(90, 100%, 6%, 0) 15%),
+    -webkit-linear-gradient(135deg, hsla(268, 65%, 13%, 0.1) 100%, hsla(268, 65%, 13%, 0) 10%);
+  background:
+    linear-gradient(45deg, hsla(320, 73%, 2%, 0.1) 0%, hsla(320, 73%, 2%, 0) 10%),
+    linear-gradient(135deg, hsla(203, 92%, 11%, 0.1) 10%, hsla(203, 92%, 11%, 0) 15%),
+    linear-gradient(225deg, hsla(90, 100%, 6%, 0.1) 10%, hsla(90, 100%, 6%, 0) 15%),
+    linear-gradient(315deg, hsla(268, 65%, 13%, 0.1) 100%, hsla(268, 65%, 13%, 0) 15%);
+}
+a.up:hover {
+  background:
+    -webkit-linear-gradient(45deg, hsla(320, 73%, 2%, 1) 0%, hsla(320, 73%, 12%, 0) 70%),
+    -webkit-linear-gradient(315deg, hsla(203, 92%, 11%, 1) 10%, hsla(203, 92%, 11%, 0) 80%),
+    -webkit-linear-gradient(225deg, hsla(90, 100%, 6%, 1) 10%, hsla(90, 100%, 6%, 0) 80%),
+    -webkit-linear-gradient(135deg, hsla(268, 65%, 13%, 1) 100%, hsla(268, 65%, 13%, 0) 70%);
+  background:
+    linear-gradient(45deg, hsla(320, 73%, 2%, 1) 0%, hsla(320, 73%, 12%, 0) 70%),
+    linear-gradient(135deg, hsla(203, 92%, 11%, 1) 10%, hsla(203, 92%, 11%, 0) 80%),
+    linear-gradient(225deg, hsla(90, 100%, 6%, 1) 10%, hsla(90, 100%, 6%, 0) 80%),
+    linear-gradient(315deg, hsla(268, 65%, 13%, 1) 100%, hsla(268, 65%, 13%, 0) 70%);
+    color: rgba(255, 255, 255, 1);
+}
+*/
+
+iframe {
+    width: 54vw;
+    height: 75vh;
+    margin-left: calc(50% - 27vw);
+    margin-right: calc(50% - 27vw);
+    border: 5px solid #eaeaea;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+/*FOOTER RULES*/
+
+footer {
+    padding: 0;
+    margin: 0;
+}
+.footer-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.footer-div {
+    display: block;
+    text-align: center;
+    margin: 10px auto;
+}
+.footer-div span {
+    color: white;
+    font-family: 'Domine', serif;
+    padding: 0px;
+}
+.footer-info {
+    display: inline-block;
+    padding: 10px;
+    margin: 10px 0 0 0;
+}
+.footer-info p,
+.footer-info a {
+    color: white;
+    font-size: 16px;
+    vertical-align: baseline;
+}
+.footer-info a {
+    text-transform: none;
+    font-family: 'Domine', serif;
+}
+.footer-info:nth-child(2) {
+    text-align: right;
+}
+.fa-facebook-official {
+    color: #3b5998;
+}
+.visit-booking {
+     display: none;
+}
+
+/*Mediaqueries*/
+
+
+/* For mobile phones: */
+
+[class*="col-"] {
+    width: 100%;
+}
+
+@media only screen and (max-width: 959px) {
+    #content-slider {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+    }
+    .visit-booking {
+        display: inline-block;
+        visibility: visible;
+    }
+    .right-panel {
+        width: 100vw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .car-container,
+    .left-panel {
+        display: none;
+    }
+    ul {
+        justify-content: center;
+    }
+    .logo {
+        margin: 0 auto;
+    }
+    .footer-info {
+        width: 100%;
+        text-align: center;
+    }
+    .footer-info:nth-child(2) {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {
+        width: 8.33%;
+    }
+    .col-2 {
+        width: 16.66%;
+    }
+    .col-3 {
+        width: 25%;
+    }
+    .col-4 {
+        width: 33.33%;
+    }
+    .col-5 {
+        width: 41.66%;
+    }
+    .col-6 {
+        width: 50%;
+    }
+    .col-7 {
+        width: 58.33%;
+    }
+    .col-8 {
+        width: 66.66%;
+    }
+    .col-9 {
+        width: 75%;
+    }
+    .col-10 {
+        width: 83.33%;
+    }
+    .col-11 {
+        width: 91.66%;
+    }
+    .col-12 {
+        width: 100%;
+    }
+}

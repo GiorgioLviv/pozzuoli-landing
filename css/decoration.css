@@ -1,0 +1,41 @@
+.decor-line {
+	position: relative;
+	display: inline-block;
+	width: 50px;
+	margin-left: calc(50% - 25px);
+	margin-right: calc(50% - 25px);
+	margin-bottom: 0;
+	margin-top: 0;
+}
+.decor-image {
+	display: inline-block;
+	width: 50px;
+	height: auto;
+}
+.decor-line::before, 
+.decor-line::after {
+	position: absolute;
+	display: inline-block;
+	content: '';
+	height: 5px;
+	width: 28vw;
+	top: 25px;	
+}
+div.decor-line::before {
+	right: 60px;
+	background: linear-gradient(to right, hsla(48, 20%, 55%, 1) 0%, hsla(50, 13%, 65%, 0.01) 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%, hsla(50, 13%, 65%, 1)), color-stop(100%, hsla(48, 20%, 55%, 1)));
+    background: -webkit-linear-gradient(right, hsla(48, 20%, 55%, 1) 0%, hsla(50, 13%, 65%, 0.01) 100%);
+    background: -moz-linear-gradient(right, hsla(48, 20%, 55%, 1) 0%, hsla(50, 13%, 65%, 0.01) 100%);
+    background: -ms-linear-gradient(right, hsla(48, 20%, 55%, 1) 0%, hsla(50, 13%, 65%, 0.01) 100%);
+    background: -o-linear-gradient(to right, hsla(48, 20%, 55%, 1) 0%, hsla(50, 13%, 65%, 0.01) 100%);
+    }
+div.decor-line::after {
+	left: 60px;
+	background: linear-gradient(to right, hsla(50, 13%, 65%, 0.01) 0%, hsla(48, 20%, 55%, 1) 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%, hsla(50, 13%, 65%, 0.01)), color-stop(100%, hsla(48, 20%, 55%, 1)));
+    background: -webkit-linear-gradient(right, hsla(50, 13%, 65%, 0.01) 0%, hsla(48, 20%, 55%, 1) 100%);
+    background: -moz-linear-gradient(right, hsla(50, 13%, 65%, 0.01) 0%, hsla(48, 20%, 55%, 1) 100%);
+    background: -ms-linear-gradient(right, hsla(50, 13%, 65%, 0.01) 0%, hsla(48, 20%, 55%, 1) 100%);
+    background: -o-linear-gradient(to right, hsla(50, 13%, 65%, 0.01) 0%, hsla(48, 20%, 55%, 1) 100%);    	
+}
